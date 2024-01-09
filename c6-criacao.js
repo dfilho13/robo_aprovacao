@@ -19,9 +19,9 @@ const puppeteer = require('puppeteer');
     await page.setDefaultNavigationTimeout(0); 
     await page.goto('https://c6.c6consig.com.br/');
 
-    await page.type('#EUsuario_CAMPO','04555012380_000169');
+    await page.type('#EUsuario_CAMPO','');
     await page.waitForTimeout(2000);
-    await page.type('#ESenha_CAMPO','Masters010*');
+    await page.type('#ESenha_CAMPO','');
     await page.click('#lnkEntrar');
 
     await page.waitForTimeout(5000);
